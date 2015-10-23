@@ -1,0 +1,43 @@
+
+branch "fdbench" contains those problems parsable by FD
+and also the problematic domain tyreworld
+
+branch "aaai16-prelim3" contains "fdbench" minus problems that are too old or too difficult
+
+removed problems:
+
+ barman-opt14-strips
+ elevators-00-adl
+ elevators-00-strips
+ elevators-opt08-strips
+ floortile-opt14-strips
+ logistics98
+ no-mystery
+ openstacks-opt08-strips
+ openstacks-opt14-strips
+ openstacks-strips
+ openstacks
+ parcprinter-08-strips
+ parking-opt14-strips
+ pathways-noneg
+ pegsol-08-strips
+ pipesworld-06
+ psr-large
+ sokoban-opt08-strips
+ tidybot-opt11-strips
+ transport-opt08-strips
+ transport-opt14-strips
+ visitall-opt14-strips
+ woodworking-opt08-strips
+
+or the domains that are not supported by lmcut
+
+ assembly
+ briefcaseworld
+ citycar-opt14-adl
+ cavediving-opt14-adl
+ optical-telegraphs
+ philosophers
+ psr-middle
+ trucks
+

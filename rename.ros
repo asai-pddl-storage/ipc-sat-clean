@@ -1,0 +1,16 @@
+#!/bin/sh
+#|-*- mode:lisp -*-|#
+#|
+exec ros -Q -- $0 "$@"
+|#
+(defun main (&rest argv)
+  (declare (ignorable argv))
+  (when argv
+    (let ((digit (ceiling (log (length argv) 10))))
+      (loop for arg in argv
+            for i from 1 to (length argv)
+            do
+         (format t "~&mv ~a p~v,,,'0@a~@[-domain~].pddl~%"
+                 arg digit
+                 i
+                 (search "domain" arg))))))
